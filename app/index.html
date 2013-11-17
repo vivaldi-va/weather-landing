@@ -10,30 +10,97 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+
+		<!-- build:css styles/main.css -->
+        <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
         <link rel="stylesheet" href="styles/main.css">
+		<!-- endbuild -->
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,300,700,400italic' rel='stylesheet' type='text/css'>
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
     </head>
     <body>
-	<section class="full-width blue hero-block">
+	<section id="hero" class="full-width black padded hero-block">
 		<div class="wrapper">
-			<div class="logo"></div>
-			<div class="header-group">
-				<h1>authentic weather</h1>
+			<div class="header-content">
+				<div class="logo">R</div>
+				<div class="header-group">
+					<h1 class="site-head">Authentic weather</h1>
 
-				<h2>Tells you the real state of the outside world, letting you plan your day without hastle</h2>
+					<h2 class="site-subhead">Tells you the real state of the outside world, letting you plan your day without hastle</h2>
+				</div>
+				<a class="btn white-trans read-more-button" href="#about">check it out</a>
 			</div>
-			<a class="btn white-trans read-more-button" href="#about">check it out</a>
 		</div>
 	</section>
 
-	<section id="about" class="full-width white about-block"></section>
-	<section id="credits" class="full-width credits-block">
-		<article class="full-width grey credits-design"></article>
-		<article class="full-width white credits-api"></article>
+	<section id="about" class="full-width white padded fat about-block">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-6">
+					<h2 class="section-title">What is it?</h2>
+
+					<p>Authentic Weather is a simple weather app, intended to condense all the weather information you need into a few screens.
+						You have no need to decypher synaptic charts, detailed condition reports or lengthy forecasts.
+						You need to know what it’s like right now, and what it’s going to be later on.<br>
+						Will it be raining? Sun shining? A blizzard signaling the beginning of a new ice age? It will take you a few seconds.</p>
+				</div>
+			</div>
+
+		</div>
 	</section>
-	<footer id="footer" class="full-width black footer-block">
+	<section id="get" class="full-width blue padded get-block">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-6 offset-6">
+					<h2 class="section-title">How do I get it?</h2>
+
+					<p>To use Authentic Weather, simply open it in your mobile browser, no installation required. If you have an iDevice, save it to your homescreen for easy access and a cleaner look.</p>
+
+					<a class="btn white-trans" href="#">go get it</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="credits" class="full-width credits-block">
+		<article class="full-width grey padded credits-design">
+			<div class="wrapper">
+				<div class="row">
+					<div class="col-6">
+						<header>
+							<h3>original design</h3>
+							<h4>tobias van schneider</h4>
+						</header>
+						<p>Tobias’ original behance design inspired me to start this project, utilising his effectively clean design and no-bullshit philosophy to create something genuinely useful. </p>
+						<blockquote class="quote">
+							<h4 class="quote-head">By the way</h4>
+
+							<div class="quote-body">
+								<p>Since I put this project online, he also released apps for iOS and Android.</p>
+								<a class="btn white-trans" href="http://authenticweather.com" target="_blank">Take a look</a>
+							</div>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="full-width white padded credits-api">
+			<div class="wrapper">
+				<div class="row">
+					<div class="col-6 offset-6">
+						<header>
+							<h3>weather API</h3>
+							<h4>wunderground.com</h4>
+						</header>
+						<p>Authentic Weather usese a free to use weather API to give accurate conditions around the world.</p>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+	<footer id="footer" class="full-width black padded thin footer-block">
 
 	</footer>
 

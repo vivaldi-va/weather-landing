@@ -1,0 +1,48 @@
+.full-width {
+	float: left;
+	width: 100%;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	&.black {
+		background-color: $black;
+		color: $white;
+	}
+	&.blue {
+		background-color: $blue;
+		color: $white;
+	}
+	&.grey{
+		background-color: $grey;
+		border-bottom: 1px solid rgba($black, 0.25);
+	}
+
+
+
+
+}
+
+.padded {
+	padding: $unit*4 0;
+
+	&.thin {
+		padding: $unit 0;
+	}
+
+	&.fat {
+		padding: $unit*8 0;
+	}
+}
+
+.wrapper {
+	max-width: 1140px;
+
+	margin: 0 auto;
+	padding: 0 1em;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}

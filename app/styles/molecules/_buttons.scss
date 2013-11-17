@@ -1,0 +1,102 @@
+$height: $touchTarget;
+
+
+
+.btn {
+	display: inline-block;
+	height: $height;
+	min-width: $height;
+	padding: 0 1em;
+
+	border: none;
+
+	color: $white;
+	font-weight: 600;
+	line-height: $height;
+	text-align: center;
+	text-decoration: none;
+
+	cursor: pointer;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+
+
+	&.default {
+		background: rgba($white, 0.25);
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+
+
+		&:hover,
+		&:focus {
+			color: inherit;
+			background-color: rgba($white, 0.6);
+		}
+
+
+		&:active {
+			color: $black;
+			background-color: $white;
+		}
+	}
+
+	&.white-trans {
+		background: rgba($white, 0.15);
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+
+
+		&:hover,
+		&:focus {
+			color: inherit;
+			background-color: rgba($white, 0.4);
+		}
+
+
+		&:active {
+			color: $black;
+			background-color: $white;
+		}
+	}
+
+
+
+
+	&.black {
+		@extend .default;
+		background-color: $black;
+		color: $white;
+		&:hover,
+		&:focus {
+			background-color: lighten($black, 10%);
+			color: $white;
+		}
+
+
+		&:active {
+			background-color: darken($black, 10%);
+		}
+	}
+
+	&.block {
+		width: 100%;
+	}
+
+
+}
+
+@media screen and (min-width: $mobile) {
+	.btn.block {
+		width: auto;
+	}
+}

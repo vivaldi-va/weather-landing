@@ -1,0 +1,42 @@
+
+
+
+.header-content {
+	position: absolute;
+	left: 0;
+	bottom: 64px;
+	width: 100%;
+	text-align: center;
+}
+
+.logo {
+	font: 4.8rem/1 'MeteoconsRegular';
+	width: 48px;
+	height: 48px;
+	margin: 0 auto $unit*8;
+}
+
+.header-group {
+	margin: 0 0 $unit*4;
+	text-align: center;
+	line-height: 1.15;
+	text-shadow: 0 0 2px rgba($black, 0.25);
+}
+
+.site-head {
+	font-size: 2.875em;
+	font-weight: 300;
+	margin: 0 0 0.5em;
+}
+
+.site-subhead {
+	font-size: 1.125em;
+	font-weight: 700;
+
+}
+
+@media only screen and (min-width: $mobile) {
+	.hero-block {
+		background: url('../images/header-background.jpg') no-repeat bottom center;
+	}
+}
